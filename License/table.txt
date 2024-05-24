@@ -1,0 +1,26 @@
+USE [Kalipso_Demo]
+GO
+
+/****** Object:  Table [dbo].[TerminalLicense]    Script Date: 07/02/2022 16:19:20 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[TerminalLicense](
+	[TerminalSN] [nvarchar](50) NOT NULL,
+	[Name] [nvarchar](50) NULL,
+	[Email] [nvarchar](50) NULL,
+	[VAT] [nvarchar](50) NULL,
+	[DateTimeStart] [datetime] NULL,
+	[DateTimeEnd] [datetime] NULL,
+	[LicType] [nvarchar](50) NULL,
+	[TerminalID] [numeric](18, 0) NULL,
+ CONSTRAINT [PK_TerminalLicense] PRIMARY KEY CLUSTERED 
+(
+	[TerminalSN] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
