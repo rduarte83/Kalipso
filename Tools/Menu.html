@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" charset='UTF-8'/>
+        <meta http-equiv="refresh" content="120"> <!--Refresh HTML Viewer-->
+        <style>
+            body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            }
+
+            body::before{
+            content: "";
+            background: url(fundomestredacor.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 10;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            }
+
+        
+
+
+
+            h1 {
+                font-size: 16px;
+                margin-top: 0;
+            }
+
+            p{
+                font-size: 16px;
+                margin-top: 0;
+            }
+
+            .container {
+                width: 500px;
+                
+            }
+
+            .container h1{
+                border: 1px solid #707070;
+                color: #fff;
+                background: #0D2BF1;
+                border-radius: 5px;
+                margin: 20px;
+                padding: 20px;
+                margin-top: 0px;
+            }
+
+            .button {
+                position: relative;
+                padding: 10px 20px;
+                margin: 5px;
+                margin-left: 20px;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 5px;
+                font-size: 16px;
+                width: 115px;
+                height: 150px;
+                float: left;
+
+                
+            }
+
+            .button.cor1{
+                background-color: #41a0bc;
+            }
+
+            .button.cor2{
+                background-color: #a8416c;
+            }
+
+            .button.cor3{
+                background-color: #7ee023;
+            }
+
+            .button.cor4{
+                background-color: #0056b3;
+            }
+
+            .button-icon {
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+                width: 30px;
+                height: auto;
+                
+            }
+
+            .button-title {
+                display: flex;
+                align-items: center;
+                margin-top: 10px;
+            }
+
+            .button-descricao{
+                font-size: 12px;
+                color: #fff;
+                margin-top: 5px;
+            }
+
+            .buttons {
+                gap: 10px;
+            }
+
+        </style>
+        <script>
+            var variable;
+            function function1(variable)
+            {
+                window.location.hash = variable;
+            }
+        </script>
+    </head>
+    <body>
+
+
+      
+
+
+
+
+        <div class="container">
+            <h1>MAPAS DE CARGA</h1>
+            <div class="buttons">
+                <a onclick="function1('novomapa')" class="button cor3">
+                    <span class="button-title">Novo Mapa Carga</span>
+                    <p class="button-descricao">Criação Mapas de Expedição</p>
+                    <p class="button-descricao"></p>
+                    <img src="icons8-factory-64.png" alt="Folder icon" class="button-icon">
+                </a>
+                <a onclick="function1('DEV')" class="button cor1">
+                    <span class="button-title"></span>
+                    <p class="button-descricao"></p>
+                    <p class="button-descricao"></p>
+                    <img src="icons8-warehouse-50.png" alt="Folder icon" class="button-icon">
+                </a>
+                <a onclick="function1('ETPF')" class="button cor1">
+                    <span class="button-title"></span>
+                    <p class="button-descricao"></p>
+                    <p class="button-descricao"></p>
+                    <img src="icons8-reception-50.png" alt="Folder icon" class="button-icon">
+                </a>
+            </div>
+        </div>
+
+              
+
+        <div class="container">
+            <h1>RELATÓRIOS</h1>
+            <div class="buttons">
+                <a onclick="function1('RPTTRANSITO')" class="button cor4">
+                    <span class="button-title">Em Trânsito</span>
+                    <img src="icons8-receipt-50.png" alt="Folder icon" class="button-icon">
+                </a>
+            </div>
+        </div> 
+           <div class="container">
+            <h1>TABELAS AUXILIARES</h1>
+            <div class="buttons">
+                <a onclick="function1('config')" class="button cor2">
+                    <span class="button-title">Configurações</span>
+                    <p class="button-descricao">Configurações ligação Base Dados</p>
+                    <img src="icons8-stock-64.png" alt="Folder icon" class="button-icon">
+                </a>
+                <a onclick="function1('viaturas')" class="button cor2">
+                    <span class="button-title">Viaturas</span>
+                    <p class="button-descricao">Criação Manutenção Viaturas</p>
+                    <img src="icons8-fork-lift-50.png" alt="Folder icon" class="button-icon">
+                </a>
+                <a onclick="function1('users')" class="button cor2">
+                    <span class="button-title">Utilizadores</span>
+                    <p class="button-descricao">Criação de utilizadores de picking e condutores</p>
+                    <img src="icons8-fork-lift-50.png" alt="Folder icon" class="button-icon">
+                </a>
+            </div>
+        </div> 
+
+
+
+    </body>
+</html>
